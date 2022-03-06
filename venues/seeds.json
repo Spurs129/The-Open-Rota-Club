@@ -9,7 +9,8 @@
     "course_record_holder": "Tom Watson",
     "years_hosted_open": 2009,
     "previous_winners": "Tom Watson, Greg Norman, NIck Price, Stewart Cink.",
-    "photos": "TBA"
+    "photos": "TBA",
+    "members_completed": []
   }
 },
 {
@@ -22,7 +23,8 @@
     "course_record_holder": "Ross Fisher",
     "years_hosted_open": 2015,
     "previous_winners": "Zach Johnson, Louis Oosthuizen, Tiger Woods, John Daly, Nick Faldo, Seve Ballesteros, Jack Nicklaus, Sam Snead, Bobby Jones, Old Tom Morris",
-    "photos": "TBA"
+    "photos": "TBA",
+    "members_completed": []
   }
 }
 ]

@@ -9,10 +9,13 @@ from.models import Venue
 from .serializers.common import VenueSerializer
 from .serializers.populated import PopulatedVenueSerializer
 
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 # Create your views here.
 
 class VenueListView(APIView):
+  permission_classes = (IsAuthenticatedOrReadOnly,)
+  
   def get(self, _request):
     venues = Venue.objects.all()
     serialized_venues = VenueSerializer(venues, many=True)
