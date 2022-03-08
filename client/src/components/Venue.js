@@ -18,7 +18,8 @@ const Venue =() => {
       const getSingleVenue = async () => {
         try {
           const { data } = await axios.get(`/api/venues/${venueId}`)
-          setVenue(data.data)
+          setVenue(data)
+          console.log("Venue", data)
         } catch (err) {
             console.log(err)
             setHasError({ error: true, message: err.message })
