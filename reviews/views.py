@@ -37,8 +37,7 @@ class ReviewListView(APIView):
 # Detailed / Single view
 class ReviewDetailView(APIView):
 
-    # /festivals/<int:pk>/reviews/<int:reviewId>/ - NoSQL endpoint (embedded relationship)
-    # /reviews/<int:pk>/ - SQL endpoint 
+    
     def delete(self, _request, pk):
         try:
             review_to_delete = Review.objects.get(pk=pk)

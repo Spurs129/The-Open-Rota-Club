@@ -8,7 +8,7 @@ const Venue =() => {
 
   const [ venue, setVenue ] = useState(null)
   const [ hasError, setHasError ] = useState({ error: false, message: '' })
-  const [ image, setImage ] = useState("")
+  // const [ image, setImage ] = useState("")
   // const [ reviews, setReview ] = useState(null)
 
   // Params
@@ -18,7 +18,7 @@ const Venue =() => {
       const getSingleVenue = async () => {
         try {
           const { data } = await axios.get(`/api/venues/${venueId}`)
-          setVenue(data)
+          setVenue(data.data)
         } catch (err) {
             console.log(err)
             setHasError({ error: true, message: err.message })
@@ -38,37 +38,38 @@ const Venue =() => {
               <hr />
               <h6>Par: {venue.par}</h6>
               <hr />
-              <h6>Last hosted Open in {venue.years_hosted_open}</h6>
-              <hr />
               <h6>Course Record: {venue.course_record} by {venue.course_record_holder}</h6>
               <hr />
+              <h6>Average Members Score: </h6>
+              <hr />
+              <h6>Average Members Rating: </h6>
+              <hr />
+              <h6>Last hosted Open in {venue.years_hosted_open}</h6>
+              <hr />
               <h6>Previous Open winners at {venue.name} include {venue.previous_winners}</h6>
+              <hr />
               <Link className='review-button' to="/reviews">Post your round {venue.name}</Link>
           </div>
         }
-        { venue && 
+        {/* { venue && 
           <div className='venue-images'>
             {venue.imageGallery.map(image => {
               return <div>
               <img className="image" onClick={() => setImage(image)} src={image} alt= "Golf Course"/>
               </div>
               })}
-              </div>}
+              </div>} */}
       
-        {image &&  
+        {/* {image &&  
           <div className="spotlight-container" onClick={() => setImage(null)}>
             <img className="spotlight-image" src={image} alt="Golf Course"/>
-          </div>}
+          </div>} */}
 
-        
-    
 
       </Container>
     
   )
 
 }
-
-
 
 export default Venue

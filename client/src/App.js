@@ -10,13 +10,6 @@ import Register from './components/auth/Register'
 import Venue from './components/Venue'
 
 const App = () => {
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     const { data } = await axios.get('/api/venues/') // * <-- replace with your endpoint
-  //     console.log(data)
-  //   }
-  //   getData()
-  // })
 
   return (
 
@@ -24,7 +17,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<VenueMap />} />
-        <Route path="/:venues.ID" element={<Venue />} />
+        <Route path="/venues/:venues.id" element={<Venue />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" eleemnt={<Login />} />
       </Routes>
     </BrowserRouter>
 
