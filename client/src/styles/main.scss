@@ -1,3 +1,13 @@
-* {
-  box-sizing: border-box;
-}
+// @import "../../node_modules/bootstrap/scss/functions";
+// @import '../../node_modules/bootstrap/scss/variables';
+
+@import './components/home';
+@import './components/map';
+
+// .title-div {
+//   background: url('https://i.imgur.com/nwn7Kc2.jpeg');
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }

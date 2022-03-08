@@ -4,9 +4,9 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 class User(AbstractUser): 
     email = models.CharField(max_length=50, unique=True) 
-    username_name = models.CharField(max_length=50, unique=True) 
-    handicap = models.IntegerField(max_value=36, default=36)
-    
+    username = models.CharField(max_length=50, unique=True) 
+    handicap = models.IntegerField(default=36)
+
     
 
     

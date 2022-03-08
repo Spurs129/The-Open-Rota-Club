@@ -38,10 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    #'jwt_auth',
+    'jwt_auth',
     'venues',
     'reviews',
-    'members'
+    #'members'
 ]
 
 MIDDLEWARE = [
@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#AUTH_USER_MODEL = 'jwt_auth.User'
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 #DEFAULT_RENDERER_CLASSES setting allows us to confirm which type to be rendered (JSON) & specifies that we want the Browseable API renderer
 #DEFAULT_AUTHENTICATION_CLASSES setting allows us to specify our own authentication middleware

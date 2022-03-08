@@ -24,6 +24,7 @@ class JWTAuthentication(BasicAuthentication):
 
         # remove Bearer from the beginning of the token
         token = header.replace('Bearer ', '')
+        print("token",token)
 
        
         try:

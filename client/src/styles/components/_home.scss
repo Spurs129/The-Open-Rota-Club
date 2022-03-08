@@ -1,0 +1,15 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+.title-div {
+  background: url('https://i.imgur.com/Y9DhVam.jpg');
+  background-size: 100pc;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100pc;
+  height: 100pc;
+}
