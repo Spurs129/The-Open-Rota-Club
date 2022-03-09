@@ -9,11 +9,10 @@ class Venue(models.Model):
   years_hosted_open = models.PositiveIntegerField(default=None)
   previous_winners = models.CharField(max_length=300, default=None)
   photos = models.CharField(max_length=200, default='')
-  #members_completed = models.ManyToManyField(
-    #"members.Member",
-    #related_name = "venues",
-    #default=''
-  #)
+  # photo1 = models.CharField(max_length=200, default='')
+  # photo2 = models.CharField(max_length=200, default='')
+
+ 
 
   def __str__(self):
     return f"{self.name}"

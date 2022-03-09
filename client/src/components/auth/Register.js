@@ -17,6 +17,7 @@ const Register = () => {
   const [ formData, setFormData ] = useState({
     username: '',
     email: '',
+    handicap: 18,
     password: '',
     passwordConfirmation: '',
   })
@@ -24,6 +25,7 @@ const Register = () => {
   const [ formErrors, setFormErrors ] = useState({
     username: '',
     email: '',
+    handicap: 18,
     password: '',
     passwordConfirmation: '',
   })
@@ -37,7 +39,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault() // this prevents reload
     try {
-      await axios.post('/api/planets/register', formData)
+      await axios.post('/api/register', formData)
       navigate('/login')
     } catch (err) {
       setFormErrors(err.response.data.message)
@@ -61,6 +63,12 @@ const Register = () => {
             <Form.Label htmlFor="email">Email Address</Form.Label>
             <Form.Control onChange={handleChange} type="email" name="email" placeholder="Email" value={formData.email} />
             {formErrors.email && <Form.Text>{formErrors.email}</Form.Text>}
+          </Form.Group>
+           {/* Handicap */}
+           <Form.Group className='mb-2'>
+            <Form.Label htmlFor="handicap">Your Handicap</Form.Label>
+            <Form.Control onChange={handleChange} type="number" name="handicap" placeholder="Handicap" value={formData.handicap} />
+            {formErrors.handicap && <Form.Text>{formErrors.handicap}</Form.Text>}
           </Form.Group>
           {/* Password */}
           <Form.Group className='mb-2'>

@@ -128,5 +128,18 @@
     "previous_winners": "Shane Lowry, Max Faulkner",
     "photos": "https://i.imgur.com/O3vc7Zt.jpg"
   }
+},
+{
+  "model": "venues.venue",
+  "pk": 11,
+  "fields": {
+    "name": "test",
+    "par": 72,
+    "course_record": 44,
+    "course_record_holder": "Tom Watson",
+    "years_hosted_open": 3,
+    "previous_winners": "Tom Watson, Greg Norman, NIck Price, Stewart Cink.",
+    "photos": "TBA"
+  }
 }
 ]

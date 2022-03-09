@@ -38,18 +38,18 @@ const Venue =() => {
               <h1>{venue.name}</h1>
               <hr />
               <h6>Par: {venue.par}</h6>
-              <hr />
+              
               <h6>Course Record: {venue.course_record} by {venue.course_record_holder}</h6>
-              <hr />
+           
               <h6>Average Members Score: </h6>
-              <hr />
+              
               <h6>Average Members Rating: </h6>
-              <hr />
+              
               <h6>Last hosted Open in {venue.years_hosted_open}</h6>
-              <hr />
+              
               <h6>Previous Open winners at {venue.name} include {venue.previous_winners}</h6>
               <hr />
-              <Link className='review-button' to="/reviews">Post your round {venue.name}</Link>
+              <Link className='review-button' to='/venues/venue.id/reviews'>Post your round at {venue.name}</Link>
           </div>
         }
         {/* { venue && 
@@ -65,6 +65,20 @@ const Venue =() => {
           <div className="spotlight-container" onClick={() => setImage(null)}>
             <img className="spotlight-image" src={image} alt="Golf Course"/>
           </div>} */}
+
+        
+      { venue &&
+      <div className='venue-reviews'>
+        <h4>{venue.name} Reviews</h4>
+        {venue.reviews.map(review => {
+          console.log(review)
+          return <div key={review._id}>
+            <div className='review-box'>
+            <span className='user'>{review.username}</span><span className='score'>My Score: {review.score} </span><br /><br /><span className='rating'>Rating : {review.rating}</span> <br /><br /> <span className='review-text'><em>{review.text}</em></span>
+            </div>
+          </div>
+        })}
+      </div> }
 
 
       </Container>
