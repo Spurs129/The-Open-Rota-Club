@@ -8,7 +8,7 @@ const Venue =() => {
 
   const [ venue, setVenue ] = useState(null)
   const [ hasError, setHasError ] = useState({ error: false, message: '' })
-  // const [ image, setImage ] = useState("")
+  const [ image, setImage ] = useState("")
   // const [ reviews, setReview ] = useState(null)
 
   // Params
@@ -32,54 +32,57 @@ const Venue =() => {
   return (
 
     
-      <Container>
+      <Container className="main-venue-container">
         { venue &&
-          <div className="course-details">
+          <div className="course-container">
+            <div className="course-details">
               <h1>{venue.name}</h1>
               <hr />
-              <h6>Par: {venue.par}</h6>
+              <h3>Par: {venue.par}</h3>
               
-              <h6>Course Record: {venue.course_record} by {venue.course_record_holder}</h6>
+              <h3>Course Record: {venue.course_record} ({venue.course_record_holder})</h3>
            
-              <h6>Average Members Score: </h6>
+              <h3>Average Members Score: </h3>
               
-              <h6>Average Members Rating: </h6>
+              <h3>Average Members Rating: </h3>
               
-              <h6>Last hosted Open in {venue.years_hosted_open}</h6>
+              <h3>Last hosted Open in {venue.years_hosted_open}</h3>
               
-              <h6>Previous Open winners at {venue.name} include {venue.previous_winners}</h6>
+              <h3>Previous Open winners at {venue.name} include {venue.previous_winners}</h3>
               <hr />
-              <Link className='review-button' to='/venues/venue.id/reviews'>Post your round at {venue.name}</Link>
-          </div>
-        }
-        {/* { venue && 
-          <div className='venue-images'>
-            {venue.imageGallery.map(image => {
-              return <div>
-              <img className="image" onClick={() => setImage(image)} src={image} alt= "Golf Course"/>
-              </div>
-              })}
-              </div>} */}
-      
-        {/* {image &&  
-          <div className="spotlight-container" onClick={() => setImage(null)}>
-            <img className="spotlight-image" src={image} alt="Golf Course"/>
-          </div>} */}
-
-        
-      { venue &&
-      <div className='venue-reviews'>
-        <h4>{venue.name} Reviews</h4>
-        {venue.reviews.map(review => {
-          console.log(review)
-          return <div key={review._id}>
-            <div className='review-box'>
-            <span className='user'>{review.username}</span><span className='score'>My Score: {review.score} </span><br /><br /><span className='rating'>Rating : {review.rating}</span> <br /><br /> <span className='review-text'><em>{review.text}</em></span>
+              <Link className='review-button' to={`/venues/${venueId}/reviews`}><button className="round-button"> Post your round at {venue.name}</button></Link>
             </div>
           </div>
-        })}
-      </div> }
+        }
 
+        { venue &&
+          <div className='course-reviews'>
+            <div className='review-box'>
+            <h2>Member Reviews</h2>
+            {venue.reviews.map(review => {
+            console.log(review)
+            return <div className="review" key={review._id}>
+            <span className='user'>Member no: {review.user}</span><span className='score'> Score: {review.score} </span><span className='rating'>Rating : {review.rating}</span> <br /><br /> <span className='review-text'><em>{review.text}</em></span>
+            </div>
+          })}
+          </div>
+          </div> }
+
+      
+        { venue && 
+          <div className='venue-images'>
+            <h2>{venue.name} image gallery</h2>
+            <div className="image-container">
+            <img className="image" onClick={() => setImage(venue.photo1)} src={venue.photo1} alt= "Golf Course"/>
+            <img className="image" onClick={() => setImage(venue.photo2)} src={venue.photo2} alt= "Golf Course"/>
+            <img className="image" onClick={() => setImage(venue.photos)} src={venue.photos} alt= "Golf Course"/>
+            </div>
+          </div>} 
+      
+        { image &&  
+          <div className="spotlight-container" onClick={() => setImage(null)}>
+            <img className="spotlight-image" src={image} alt="Golf Course"/>
+          </div>} 
 
       </Container>
     

@@ -9,7 +9,9 @@
     "course_record_holder": "Tom Watson",
     "years_hosted_open": 2009,
     "previous_winners": "Tom Watson, Greg Norman, Nick Price, Stewart Cink.",
-    "photos": "https://i.imgur.com/Ggjai5j.jpg"
+    "photos": "https://i.imgur.com/Ggjai5j.jpg",
+    "photo1": "https://i.imgur.com/0S02Y1K.jpg",
+    "photo2": "https://i.imgur.com/QDyFrRi.jpg"
   }
 },
 {
@@ -22,7 +24,9 @@
     "course_record_holder": "Ross Fisher",
     "years_hosted_open": 2015,
     "previous_winners": "Zach Johnson, Louis Oosthuizen, Tiger Woods, John Daly, Nick Faldo, Seve Ballesteros, Jack Nicklaus, Sam Snead, Bobby Jones, Old Tom Morris",
-    "photos": "https://i.imgur.com/7pm79Dw.jpg"
+    "photos": "https://i.imgur.com/7pm79Dw.jpg",
+    "photo1": "https://i.imgur.com/EG6CAIH.jpg",
+    "photo2": "https://i.imgur.com/GVIpJP2.jpg"
   }
 },
 {
@@ -35,20 +39,24 @@
     "course_record_holder": "Phil Mickelson",
     "years_hosted_open": 2016,
     "previous_winners": "Henrik Stenson, Todd Hamilton, Jsstin Leonard, Tom Watson, Arnold Palmer, Bobby Locke",
-    "photos": "https://i.imgur.com/xoaMKRb.jpg"
+    "photos": "https://i.imgur.com/xoaMKRb.jpg",
+    "photo1": "https://i.imgur.com/7ASPWbQ.jpg",
+    "photo2": "https://i.imgur.com/0bTWHQe.jpg"
   }
 },
 {
   "model": "venues.venue",
   "pk": 4,
   "fields": {
-    "name": "Royal St Geroges",
+    "name": "Royal St Georges",
     "par": 70,
     "course_record": 63,
     "course_record_holder": "Nick Faldo",
     "years_hosted_open": 2021,
     "previous_winners": "Colin Morikawa",
-    "photos": "https://i.imgur.com/3lYZXsD.jpg"
+    "photos": "https://i.imgur.com/3lYZXsD.jpg",
+    "photo1": "https://i.imgur.com/A8CermU.jpg",
+    "photo2": "https://i.imgur.com/gcQZChM.jpg"
   }
 },
 {
@@ -61,7 +69,9 @@
     "course_record_holder": "Tommy Fleetwood",
     "years_hosted_open": 2018,
     "previous_winners": "Francesco Molinari, Paul Lawrie, Padraig Harrington, Tom Watson",
-    "photos": "https://i.imgur.com/oaPAey4.jpg"
+    "photos": "https://i.imgur.com/oaPAey4.jpg",
+    "photo1": "https://i.imgur.com/JfCVipk.jpg",
+    "photo2": "https://i.imgur.com/VqJp7ft.jpg"
   }
 },
 {
@@ -74,7 +84,9 @@
     "course_record_holder": "Brandon Grace",
     "years_hosted_open": 2013,
     "previous_winners": "Phil Mickelson, Ernie Els, Nick Faldo, Tom Watson, Jack Nicklaus",
-    "photos": "https://i.imgur.com/oqeXmXc.jpg"
+    "photos": "https://i.imgur.com/oqeXmXc.jpg",
+    "photo1": "https://i.imgur.com/6lPv6Hb.jpg",
+    "photo2": "https://i.imgur.com/KQ0jGXJ.jpg"
   }
 },
 {
@@ -87,7 +99,9 @@
     "course_record_holder": "Brandon Grace",
     "years_hosted_open": 2017,
     "previous_winners": "Jordan Speith, Tom Watson, Arnold Palmer, Peter Thomson",
-    "photos": "https://i.imgur.com/k2b5HD3.jpg"
+    "photos": "https://i.imgur.com/k2b5HD3.jpg",
+    "photo1": "https://i.imgur.com/T0iLljE.jpg",
+    "photo2": "https://i.imgur.com/09dN386.jpg"
   }
 },
 {
@@ -100,7 +114,9 @@
     "course_record_holder": "Tom Lehman",
     "years_hosted_open": 2012,
     "previous_winners": "Ernie Els, David Duval, Tom Lehman, Seve Ballesteros",
-    "photos": "https://i.imgur.com/hPYvIRF.jpg"
+    "photos": "https://i.imgur.com/hPYvIRF.jpg",
+    "photo1": "https://i.imgur.com/sGnTHxg.jpg",
+    "photo2": "https://i.imgur.com/oqeXmXc.jpg"
   }
 },
 {
@@ -113,7 +129,9 @@
     "course_record_holder": "Rory Mcilroy",
     "years_hosted_open": 2014,
     "previous_winners": "Rory Mcilroy, Roberto De Vicenzo",
-    "photos": "https://i.imgur.com/gcQZChM.jpg"
+    "photos": "https://i.imgur.com/gcQZChM.jpg",
+    "photo1": "https://i.imgur.com/D3fHeJp.jpg",
+    "photo2": "https://i.imgur.com/Lhu4jMI.jpg"
   }
 },
 {
@@ -126,20 +144,9 @@
     "course_record_holder": "Shane Lowrey",
     "years_hosted_open": 2019,
     "previous_winners": "Shane Lowry, Max Faulkner",
-    "photos": "https://i.imgur.com/O3vc7Zt.jpg"
-  }
-},
-{
-  "model": "venues.venue",
-  "pk": 11,
-  "fields": {
-    "name": "test",
-    "par": 72,
-    "course_record": 44,
-    "course_record_holder": "Tom Watson",
-    "years_hosted_open": 3,
-    "previous_winners": "Tom Watson, Greg Norman, NIck Price, Stewart Cink.",
-    "photos": "TBA"
+    "photos": "https://i.imgur.com/O3vc7Zt.jpg",
+    "photo1": "https://i.imgur.com/gcQZChM.jpg",
+    "photo2": "https://i.imgur.com/qoSE2Sf.jpg"
   }
 }
 ]

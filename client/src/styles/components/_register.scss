@@ -1,0 +1,46 @@
+.form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: url('https://i.imgur.com/3lYZXsD.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100pc;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #70A288 ;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.form-item {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form.label {
+  margin-right: 10px;
+}
+.register-button {
+  padding: 10px;
+}
+.button {
+  padding: 10px;
+  background-color: #80D39B;
+  margin-top: 20px;
+}
+.reg-title{
+  color: #455561;
+  margin-top: 30px;
+  text-align: center;
+  
+}

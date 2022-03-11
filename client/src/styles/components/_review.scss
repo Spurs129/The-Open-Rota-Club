@@ -1,0 +1,36 @@
+.review-page {
+  background: url('https://i.imgur.com/hPYvIRF.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100pc;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.review-form {
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  background-color: #70A288;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+h1 {
+  margin-top: 50px;
+  color: #455561
+}
+
+.input {
+  margin: 5px;
+}
+
+#submit {
+  background-color: #80D39B;
+  padding: 5px;
+}

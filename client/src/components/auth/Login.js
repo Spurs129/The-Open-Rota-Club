@@ -31,7 +31,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault() // prevent reload
     try {
-      const { data } = await axios.post('api/auth/login', formData)
+      const { data } = await axios.post('/api/auth/login/', formData)
       // Redirect using the navigate variable, passing in the route we want to redirect to
       console.log('token', data.token)
       setTokenToLocalStorage(data.token) // Set token to local storage
@@ -43,21 +43,21 @@ const Login = () => {
   }
 
   return (
-    <div className="form-page">
+    <div className="form-login">
       <Container>
         <Form onSubmit={handleSubmit} className='mt-4'>
-          <h2>Login</h2>
-          <div className='wrapper'>
-          <Form.Group className='mb-2'>
+          <h2 className="login-title">Login</h2>
+          <div className='wrapper' id="login-wrapper">
+          <Form.Group className='form-item'>
             <Form.Label htmlFor='email'>Email Address</Form.Label>
             <Form.Control onChange={handleChange} type="email" name="email" placeholder='Email' defaultValue={formData.email} />
           </Form.Group>
-          <Form.Group className='mb-2'>
+          <Form.Group className='form-item'>
             <Form.Label htmlFor="password">Password</Form.Label>
             <Form.Control onChange={handleChange} type="password" name="password" placeholder='Password' defaultValue={formData.password} />
           </Form.Group>
           { formError && <Form.Text>{formError}</Form.Text> }
-          <Form.Group className='mt-4 text-center'>
+          <Form.Group className='form-button'>
             <Button variant="info" className='button' type="submit">Log in</Button>
           </Form.Group>
           </div>

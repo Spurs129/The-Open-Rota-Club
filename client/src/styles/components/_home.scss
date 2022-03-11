@@ -3,13 +3,32 @@
 // }
 
 .title-div {
-  background: url('https://i.imgur.com/Y9DhVam.jpg');
-  background-size: 100pc;
-  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  color: #455561;
+  
+}
+.homepage {
+  background: url('https://i.imgur.com/Lhu4jMI.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100pc;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 100pc;
-  height: 100pc;
+}
+.map-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #70A288;
+  color:#455561
+  // #80D39B
 }

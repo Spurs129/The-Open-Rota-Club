@@ -17,7 +17,8 @@ class ReviewListView(APIView):
 
     # Add review
     def post(self, request):
-        print(request.data)
+        print(request.user)
+        request.data['user'] = request.user.id
         serialized_review = ReviewSerializer(data=request.data)
         try:
             serialized_review.is_valid()
@@ -26,6 +27,7 @@ class ReviewListView(APIView):
             return Response(serialized_review.data, status=status.HTTP_201_CREATED)
         except AssertionError as e:
             print(str(e))
+            print(serialized_review.errors)
             return Response({
                 "detail": str(e) 
             }, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

@@ -50,40 +50,40 @@ const Register = () => {
     <div className="form-page">
       <Container>
         <Form onSubmit={handleSubmit} className='mt-4'>
-          <h2>Register</h2>
+          <h1 className="reg-title">Register</h1>
           <div className='wrapper'>
           {/* Username */}
-          <Form.Group className='mb-2'>
+          <Form.Group className='form-item'>
             <Form.Label htmlFor='username'>Username</Form.Label>
             <Form.Control onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.username} />
             {formErrors.username && <Form.Text> {formErrors.username} </Form.Text>}
           </Form.Group>
           {/* Email */}
-          <Form.Group className='mb-2'>
+          <Form.Group className='form-item'>
             <Form.Label htmlFor="email">Email Address</Form.Label>
             <Form.Control onChange={handleChange} type="email" name="email" placeholder="Email" value={formData.email} />
             {formErrors.email && <Form.Text>{formErrors.email}</Form.Text>}
           </Form.Group>
            {/* Handicap */}
-           <Form.Group className='mb-2'>
+           <Form.Group className='form-item'>
             <Form.Label htmlFor="handicap">Your Handicap</Form.Label>
             <Form.Control onChange={handleChange} type="number" name="handicap" placeholder="Handicap" value={formData.handicap} />
             {formErrors.handicap && <Form.Text>{formErrors.handicap}</Form.Text>}
           </Form.Group>
           {/* Password */}
-          <Form.Group className='mb-2'>
+          <Form.Group className='form-item'>
             <Form.Label htmlFor="password">Password</Form.Label>
             <Form.Control onChange={handleChange} type="password" name="password" placeholder="Password" value={formData.password} />
             {formErrors.password && <Form.Text>{formErrors.password}</Form.Text>}
           </Form.Group>
           {/* Password Confirmation */}
-          <Form.Group className='mb-2'>
+          <Form.Group className='form-item'>
             <Form.Label htmlFor="passwordConfirmation">Confirm Password</Form.Label>
             <Form.Control onChange={handleChange} type="password" name="passwordConfirmation" placeholder="Confirm Password" value={formData.passwordConfirmation} />
             {formErrors.passwordConfirmation && <Form.Text>{formErrors.passwordConfirmation}</Form.Text>}
           </Form.Group>
           {/* Submit */}
-          <Form.Group className='text-center mt-4'>
+          <Form.Group className='register-button'>
             <Button variant="info" className='button' type="submit">Submit</Button>
           </Form.Group>
           </div>

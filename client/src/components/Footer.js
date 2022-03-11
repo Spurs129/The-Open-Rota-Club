@@ -9,16 +9,15 @@ import Container from 'react-bootstrap/Container'
 const Footer = () => {
 
   return (
-    <>
-      <div className='nav-footer'>
+    
         <Navbar>
-          <Nav.Item>
+          <Nav.Item className="footer">
             The Open Rota Club 2022 by 
             {<a className='github' id ='neil' href='https://github.com/spurs129' target='_blank' rel="noreferrer">Neil Mcfayden</a>}
           </Nav.Item>
         </Navbar>
-      </div>
-    </>
+
+  
   )
 }
 export default Footer

@@ -22,39 +22,35 @@ const MainNavbar = () => {
     navigate('/')
   }
   return (
-    <div className='nav-style'>
-      <div className='nav-logo'>
+    <Container className='nav-container'>
         <Navbar.Brand>
-          <Link className='btn btn-logo' to='/'> <img className='logo' src={('')} alt='logo' key='logo' />Home </Link>
+          <Link className='nav-item' to='/'>Home</Link>
         </Navbar.Brand>
-      </div>
+     
+        <Navbar.Brand>
+          <Link className='nav-item' to='/map'>The Open Championship Venues</Link>
+        </Navbar.Brand>
 
       {userIsAuthenticated() ?
         <>
-          <div className='nav-profile'>
-            <Nav.Item>
-              <Link className='btn btn-nav' to="/profile">Members Area</Link>
-            </Nav.Item>
-          </div>
+          <Nav.Item>
+            <Link className='nav-item' to="/profile">Members Area</Link>
+          </Nav.Item>
+
           <Nav.Item onClick={handleLogout}>
-            <span className='btn btn-nav'> Logout </span>
+            <span className='nav-item'>Logout</span>
           </Nav.Item>
         </> :
         <>
-          <div className='nav-login'>
-            <Nav.Item>
-              <Link className='btn btn-nav' to="/register"> Register </Link>
-            </Nav.Item>
-          </div>
-
-          <div className='nav-login'>
-            <Nav.Item>
-              <Link className='btn btn-nav' to="/login">Login</Link>
-            </Nav.Item>
-          </div>
-
+          <Nav.Item>
+            <Link className='nav-item' to="/register">Register</Link>
+          </Nav.Item>
+          
+          <Nav.Item>
+            <Link className='nav-item' to="/login">Login</Link>
+          </Nav.Item>
         </>}
-      </div>
+      </Container>
 
       
   )
