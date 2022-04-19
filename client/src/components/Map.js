@@ -52,7 +52,7 @@ const VenueMap = () => {
           <Marker anchor="left" className='markers' latitude={53.9196} longitude={-3.1178}><Link to={`/venues/8`} className="emoji">⛳️Royal Lytham</Link></Marker>
           <Marker anchor="left" className='markers' latitude={53.6821} longitude={-3.1322}><Link to={`/venues/7`} className="emoji">⛳️Royal Birkdale</Link></Marker>
           <Marker anchor="left" className='markers' latitude={53.3874} longitude={-3.1848}><Link to={`/venues/9`} className="emoji">⛳️Hoylake</Link></Marker>
-          <Marker anchor="left" className='markers' latitude={51.2737} longitude={1.1669}><Link to={`/venues/4`} className="emoji">⛳️Royal St George's</Link></Marker>
+          <Marker anchor="left" className='markers' latitude={51.2737} longitude={1.1669}><Link to={`/venues/4`} className="emoji">⛳️Royal St Georges</Link></Marker>
           <Marker anchor="left" className='markers' latitude={54.8997} longitude={-6.4854}><Link to={`/venues/10`} className="emoji">⛳️Royal Portrush</Link></Marker>
           
         </Map>
