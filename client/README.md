@@ -33,7 +33,7 @@ VScode, Yarn, Insomnia, Git, GitHub, Heroku (deployment), Figma (planning)
 I used a tool called quick database diagrams to draw my back-end structure. The structure would be 3 apps with one-to-one and one-to-many relationships illustrated below. The apps are Venues, Users, and Reviews. 
 
 
-![alt text](client/assets/project4-1.png)
+![alt text](/client/assets/project4-1.png)
 
 
 #### Front-end
@@ -41,7 +41,7 @@ I used a tool called quick database diagrams to draw my back-end structure. The 
 I used figma to map out the front end of my site. The idea was to have a landing page with a nice photo and a link to a map of the UK with the golf course locations represented as flags. The map would be built with Mapbox.
 
 
-![alt text](/assets/project4-2.png)
+![alt text](/client/assets/project4-2.png)
 
 
 Clicking on one of the flags would then open up to a landing page for that venue. On this page you would have course information and a button linking to the review page, where the user can review the venue and register your score on this course, if they have played it. 
@@ -56,13 +56,13 @@ Phase 2 would involve building a leaderboard system for users who have the lowes
 Apps - I built 3 database applications - User, Venue and Reviews, as per the relational diagram in the planning phase. Each venue’s details were stored in the seed files. Images were saved from the website of each venue, and then hosted using Imgur. 
 
 
-![alt text](/assets/project4-3.png)
+![alt text](/client/assets/project4-3.png)
 
 
 Models - For each app, I built a model to define the relationships between apps. Below shows the code for my review model. Here, I have 2 foreign keys which link the review model to the user app and the venue app.
 
 
-![alt text](/assets/project4-4.png)
+![alt text](/client/assets/project4-4.png)
 
 
 Serializers - I built RESTful routes and serializers for each App, to convert the data into the required format. 
@@ -76,19 +76,19 @@ Serializers - I built RESTful routes and serializers for each App, to convert th
 Landing Page - I wanted a simple slick landing page with a striking golf image that complemented the colour scheme I had chosen. 
 
 
-![alt text](/assets/project4-6.png)
+![alt text](/client/assets/project4-6.png)
 
 
 I used a clear design and simple code in React, with an obvious link to my locations page that would introduce the venues and show them on the map.
 
 
-![alt text](/assets/project4-7.png)
+![alt text](/client/assets/project4-7.png)
 
 
 My venues page proved to be much more challenging. I wanted to produce a simple clean map using Mapbox that did not have any features such as roads and parks etc. I just wanted the outline of the UK, with each golf course location highlighted. I partially achieved this goal. The result is below.
 
 
-![alt text](/assets/project4-8.png)
+![alt text](/client/assets/project4-8.png)
 
 
 I found Mapbox difficult to use and over complicated for the simple map I needed, this was the simplest solution I could find.
@@ -97,32 +97,32 @@ An additional problem was caused by the geographical location of the courses. Ma
 I hard coded the coordinates of each venue into my map page. In the future, I would like to instead store these coordinates in a back end database, to make the front-end simpler and cleaner. 
 
 
-![alt text](/assets/project4-9.png)
+![alt text](/client/assets/project4-9.png)
 
 
 Another issue I had was that the links to the golf course location were centred, so that the actual location of the golf course was appearing halfway along the golf course name. I wanted the course location to be where the flag emoji was located. In the example below, the exact location of St Andrews is under the ‘n’, not where the emoji is.
 
 
-![alt text](/assets/project4-10.png)
+![alt text](/client/assets/project4-10.png)
 
 
 Now St Andrews location is marked by the emoji. 
 Each course had its own home page with info on the course retrieved from my back end database. Here is St Andrews. The page also shows previous reviews of this course. Phase 2 would also include average scores and average member ratings. 
 
 
-![alt text](/assets/project4-11.png)
+![alt text](/client/assets/project4-11.png)
 
 
 Clicking on the link here will open the review page so the user can post their score and review the course. Phase 2 will include more features such as a full scorecard to record the score for each hole played. 
 
 
-![alt text](/assets/project4-12.png)
+![alt text](/client/assets/project4-12.png)
 
 
 My login and register pages had similar CSS and colours. When signing up, players entered their current golf handicap. Handicaps range from 0 to 36. I used 18 as a placeholder.
 
 
-![alt text](/assets/project4-13.png)
+![alt text](/client/assets/project4-13.png)
 
 
 ### Bugs
