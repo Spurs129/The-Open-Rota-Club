@@ -18,32 +18,17 @@ TBC
 ### Technologies Used
 
 #### Back-end
-Python
-PostgreSQL
-Django
-JWT (jsonwebtoken)
+Python, PostgreSQL, Django, JWT (jsonwebtoken)
 
 #### Front-end
-JSX (HTML5 in React)
-SCSS
-JavaScript (ES6)
-Node.js
-Bootstrap
-Axios
-Mapbox
+JSX (HTML5 in React), SCSS, JavaScript (ES6), Node.js, Bootstrap, Axios, Mapbox
 
 #### Dev Tools
-VScode
-Yarn
-Insomnia
-Git
-GitHub
-Heroku (deployment)
-Figma (planning)
+VScode, Yarn, Insomnia, Git, GitHub, Heroku (deployment), Figma (planning)
  
 ### Planning - Phase 1
 
-####Back-End
+#### Back-End
 
 I used a tool called quick database diagrams to draw my back-end structure. The structure would be 3 apps with one-to-one and one-to-many relationships illustrated below. The apps are Venues, Users, and Reviews. 
 
