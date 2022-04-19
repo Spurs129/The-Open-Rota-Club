@@ -33,7 +33,7 @@ VScode, Yarn, Insomnia, Git, GitHub, Heroku (deployment), Figma (planning)
 I used a tool called quick database diagrams to draw my back-end structure. The structure would be 3 apps with one-to-one and one-to-many relationships illustrated below. The apps are Venues, Users, and Reviews. 
 
 
-![alt text](/assets/project4-1.png)
+![alt text](client/assets/project4-1.png)
 
 
 #### Front-end
@@ -68,7 +68,7 @@ Models - For each app, I built a model to define the relationships between apps.
 Serializers - I built RESTful routes and serializers for each App, to convert the data into the required format. 
 
 
-![alt text](/assets/project4-5.png)
+![alt text](/client/assets/project4-5.png)
 
  
 ### Building the front-end
