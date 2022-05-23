@@ -51,7 +51,7 @@ I also planned to build a register, login and profile page to display the users 
 Phase 2 would involve building a leaderboard system for users who have the lowest scores at each venue, the lowest average scores across all venues and various other statistical tools.
 
 
-###Building the back-end 
+### Building the back-end 
 
 Apps - I built 3 database applications - User, Venue and Reviews, as per the relational diagram in the planning phase. Each venue’s details were stored in the seed files. Images were saved from the website of each venue, and then hosted using Imgur. 
 
